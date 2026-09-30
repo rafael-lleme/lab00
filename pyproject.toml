@@ -1,0 +1,25 @@
+[project]
+name = "lab00"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "ipykernel>=7.3.0",
+    "pandas>=3.0.5",
+    "seaborn>=0.13.2",
+]
+
+[project.scripts]
+lab00 = "lab00:main"
+
+[build-system]
+requires = ["uv_build>=0.12.9,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv.workspace]
+members = [
+    "cmpsc105-lab02-main",
+    "cmpsc105-lab03-main",
+    "cmpsc105-lab04-main",
+]

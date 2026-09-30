@@ -1,0 +1,19 @@
+[project]
+name = "cmpsc105-lab03-main"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "rafael-lleme", email = "leme01@allegheny.edu" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "pandas>=3.0.5",
+]
+
+[project.scripts]
+cmpsc105-lab03-main = "cmpsc105_lab03_main:main"
+
+[build-system]
+requires = ["uv_build>=0.12.9,<0.13.0"]
+build-backend = "uv_build"
